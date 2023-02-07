@@ -6,8 +6,11 @@ export default {
     rollupOptions: {
       input: {
         home: resolve(__dirname, "./src/index.html"),
+        signup: resolve(__dirname, "./src/signup.html"),
       },
     },
-    envDir: "../",
+    // envDir: "../src/js/",
   },
 };
+
+// outDir: "../dist",
