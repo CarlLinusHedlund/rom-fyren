@@ -55,10 +55,11 @@ async function signInUser(email, password) {
   console.log(email);
   console.log(password);
   try {
-    const { user, msg } = await signinUser(email, password);
+    const { user, session, msg } = await signinUser(email, password);
     if (user) {
-      console.log(user);
-      console.log("POST REQUEST SUCCEEDED!!  🥳 🤗🤗");
+      console.log(session);
+      console.log(session.user);
+      console.log("SIGN IN SUCCEEDED!!  🥳 🤗🤗");
       // location.replace("/")
     } else {
       // case error

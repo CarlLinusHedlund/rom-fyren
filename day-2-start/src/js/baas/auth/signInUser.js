@@ -14,6 +14,7 @@ async function signinUser(email, password) {
   if (error) {
     return error;
   } else {
+    console.log(data);
     return data;
   }
 }
