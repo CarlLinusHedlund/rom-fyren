@@ -9,8 +9,7 @@ export default {
         signup: resolve(__dirname, "./src/signup.html"),
       },
     },
+    outDir: "./dist",
     // envDir: "../src/js/",
   },
 };
-
-// outDir: "../dist",
